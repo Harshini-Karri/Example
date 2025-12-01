@@ -1,0 +1,17 @@
+{
+  "applications": [
+    {
+      "name": "SPA",
+      "memory": "256M",
+      "instances": 1,
+      "buildpacks": [
+        "nodejs_buildpack"
+      ],
+      "command": "node.js/index.js",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "random-route": true
+    }
+  ]
+}
